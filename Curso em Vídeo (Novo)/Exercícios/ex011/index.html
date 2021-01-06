@@ -9,14 +9,43 @@
 </head>
 <body>
 
-    <h1>Imagem Dinâmica</h1>
+    <h1>Trabalhando com Mídias</h1>
+
+    <h2>Imagem Dinâmica</h2>
     <p>Tente abrir o site em dispositivos com telas de tamanhos diferentes e veja o que acontece.</p>
 
     <picture>
+
         <source media="(max-width: 750px)" srcset="./imagens/foto-p.png" type="image/png">
         <source media="(max-width: 1050px)" srcset="./imagens/foto-m.png" type="image/png">
         <img src="./imagens/foto-g.png" alt="Imagem flexível">
+
     </picture>
+
+    <h2>Reproduzindo Áudios</h2>
+    <p>Pra ouvir uma música ou um podcast, podemos colocar áudios em nossos sites.</p>
+
+    <audio preload="metadata" controls loop>
+
+        <source src="./midias/cocktail-hour.mp3" type="audio/mpeg">
+        <p>Infelizmente, seu navegador não suporta áudios. <a href="./midias/cocktail-hour.mp3" download="cocktail-hout.mp3" type="audio/mp3">Clique aqui para baixar o arquivo</a>.</p>
+
+    </audio>
+
+    <h2>Vídeos Hospedados Localmente</h2>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <video width="560" poster="./imagens/campo.png" preload="metadata" controls loop>
+
+        <source src="./midias/campo.mp4" type="video/mp4">
+        <source src="./midias/campo.m4v" type="video/m4v">
+        <p>Infelizmente, seu navegador não suporta vídeos. <a href="./midias/campo.mp4" download="campo.mp4" type="video/mp4">Clique aqui para baixar o arquivo</a>.</p>
+
+    </video>
+
+    <h2>Vídeo Incorporados</h2>
+    <p>Este é um vídeo que explica sobre Open Source</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/a8fHgx9mE5U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
 </body>
 </html>
